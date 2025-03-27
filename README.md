@@ -8,12 +8,14 @@
 3.Transform Data > Remove Columns (unecessary columns) > Reorder Column (in order to have the primary key as first column) > Remove Duplicates
 
 //Page 1: "HC - Drill through N":
+
 //Card "Total Headcount": 
 
 4.Visualizations > Add data to your visual > card
 5.Add data to your visual > drag field EmployeeNumber into Fields > select "count(Distinct)"
 
 //Column Chart 1: 
+
 6.Visualizations > Add data to your visual > Clustered column chart
 7.Add data to your visual > drag field "Department" in the X-axis 
 8.Add data to your visual > drag field EmployeeNumber in the Y-axis > select "count(Distinct)"
