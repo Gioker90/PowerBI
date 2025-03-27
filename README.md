@@ -7,6 +7,7 @@
 
 3.Transform Data > Remove Columns (unecessary columns) > Reorder Column (in order to have the primary key as first column) > Remove Duplicates
 
+
 //Page 1: "HC - Drill through N":
 
 //Card "Total Headcount": 
@@ -38,6 +39,7 @@
 13.Add data to your visual > drag field "Job Role" in the X-axis 
 
 14.Add data to your visual > drag field EmployeeNumber in the Y-axis > select "count(Distinct)"
+
 
 //Page 2: "HC - Drill through Y":
 
