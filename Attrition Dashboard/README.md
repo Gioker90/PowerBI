@@ -1,66 +1,66 @@
 # Attrition rate overview
-1.Download xslsx file from kaggle.com (HR Analytics Datasets: https://www.kaggle.com/datasets/muhammadehabmuhammad/hr-analytics-datasets), containing 3 table: a fact table, named HR, and 2 dimension tables, named Employee and Department.
+1. Download xslsx file from kaggle.com (HR Analytics Datasets: https://www.kaggle.com/datasets/muhammadehabmuhammad/hr-analytics-datasets), containing 3 table: a fact table, named HR, and 2 dimension tables, named Employee and Department.
 
-. **Model view** > set the relationship between the table: HR and Employees have a one-to-one relationship, because there is a uniqe ID value in both. HR and Department have a mant-to-one relationship, with the value 'Department' that is present multiple times in the HR table and as a unique value in the Department Table
+2. Go to **Model view** > set the relationship between the table: HR and Employees have a one-to-one relationship, because there is a uniqe ID value in both. HR and Department have a mant-to-one relationship, with the value 'Department' that is present multiple times in the HR table and as a unique value in the Department Table
 
-. **Transform Data** > Looking for duplicate values in column ID > **Add Conditional Column** called 'Attrition', with the following condition: 
+3. **Transform Data** > Looking for duplicate values in column ID > **Add Conditional Column** 'Attrition', with the following condition: 
 
 `IF Termination Date = null THEN 'No', ELSE 'Yes'`
 
 ## Clustered Column Chart
 
-.**Model view**: 
+4. Go to **Report view**: 
 
-.**Visualizations** > **Add data to your visual** >**Clustered Column Chart**
+5. **Visualizations** > **Add data to your visual** > **Clustered Column Chart**
 
-.**Calculations**>**New Measure** called 'HC': `COUNT('HR data'[ID])`
+6. Create measure: **Calculations** > **New Measure** 'HC': `COUNT('HR data'[ID])`
 
-. **Add data to your visual** > drag field 'Salary' in the X-axis 
+7. **Add data to your visual** > drag field 'Salary' in the X-axis 
 
-. Right click on 'Salary' > **New Group** > create 4 groups: 30-33k, 33-36k, 36-39k, >39k
+8. Right click on 'Salary' > **New Group** > create 4 groups: 30-33k, 33-36k, 36-39k, >39k
 
-. **Add data to your visual** > drag  Measure 'HC' in the Y-axis
+9. **Add data to your visual** > drag  Measure 'HC' in the Y-axis
 
 ## Stacked Area Chart
 
-.**Visualizations** > **Add data to your visual** >**Stacked Area Chart**
+10. **Visualizations** > **Add data to your visual** >**Stacked Area Chart**
 
-. **Add data to your visual** > drag field 'Termination Date' in the X-axis 
+11. **Add data to your visual** > drag field 'Termination Date' in the X-axis 
 
-.**Add data to your visual** > drag Measure 'HC' in the Y-axis
+12. **Add data to your visual** > drag Measure 'HC' in the Y-axis
 
 ## 100% Stacked Bar Chart
 
-.**Visualizations** > **Add data to your visual** >**100% Stacked Bar Chart**
+13. **Visualizations** > **Add data to your visual** >**100% Stacked Bar Chart**
 
-. **Add data to your visual** > drag  Measure 'HC' in the X-axis 
+14. **Add data to your visual** > drag  Measure 'HC' in the X-axis 
 
-.**Add data to your visual** > drag Field 'Attrition' in 'Legend'
+15. **Add data to your visual** > drag Field 'Attrition' in 'Legend'
 
 ## Attrition rate vs Overall av. Attrition rate panel
 
-.**Insert**>**Text box** to create the title of the panel and the 4 groups titles
+16. **Insert** > **Text box** to create the title of the panel and the 4 groups titles
 
-.Create Measure 1: **Calculations**>**New Measure** called 'attrition %':
+17. Create Measure: **Calculations** > **New Measure** 'attrition %':
 
 `DIVIDE(CALCULATE(COUNT('HR data'[ID]), 'HR data'[Attrition]="Yes"), COUNT('HR data'[ID]))` to calculate the attrition that will change based on what the user select
 
-.Create Measure 2 **Calculations**>**New Measure** called 'attrition 2':
+18. Create Measure: **Calculations** > **New Measure** 'attrition 2':
 
 `CALCULATE(AVERAGEX('Department Bridge', [attrition %]), REMOVEFILTERS(Employees[Salary Updated (groups)]))` that, instead, won't be affected by any filtering
 
-.Create Measure 3 **Calculations**>**New Measure** called 'Variation %':
+19. Create Measure: **Calculations** > **New Measure** 'Variation %':
 
 `([attrition %]-[av attrition 2])/[av attrition 2]`
 
-.**Visualizations** > **Add data to your visual**>**Table**
+20. **Visualizations** > **Add data to your visual** > **Table**
 
-.**Add data to your visual** > drag 'Variation %' Measure in 'Columns' and filtering the first group of salary (30-33k) (**Filters**>**Filters on this visual**>drag 'Salary' Field into the filters panel
-
-.**Conditional formatting**>**Icons**>**Format style: Ruleds**>**based on 'Variation %'**> 
+21. **Add data to your visual** > drag 'Variation %' Measure in 'Columns' and filtering the first group of salary (30-33k) (**Filters**>**Filters on this visual**>drag 'Salary' Field into the filters panel) > right click on 'Variation %' > **Conditional formatting** > **Icons** > **Format style: Rules** > **based on 'Variation %'**>
 
 `IF 'Variation %' > 0 THEN`  ![image](https://github.com/user-attachments/assets/f31473eb-40db-4fd6-853a-5d91fe359245)
 
 `IF 'Variation %' = 0 THEN`  ![image](https://github.com/user-attachments/assets/26649a8a-54fb-4300-a4a2-1261749c42b8)
 
 `IF' Variation %' < 0 THEN` ![image](https://github.com/user-attachments/assets/42f4da43-7c6d-444a-aee4-101d6970ede3)
+
+22. Do the same for the other 3 groups of salary
