@@ -8,7 +8,7 @@ First of all, I created a dataset, using https://mockaroo.com/, made of one exce
 
 2.**Transform Data** > **Remove Column** (unecessary columns) > **Reorder Column** (in order to have the primary key as first column) > **Remove Duplicates**
 
-3.**Create new measure**, called 'product' Revenues (in this case 'Cappuccino'), and doing the same for all the 4 products
+3.**Create new measure**, called 'product' Revenues (in this case 'Cappuccino'), using `SUMX` c. Then doing the same for all the 4 products
 
 `
 
@@ -30,9 +30,9 @@ First of all, I created a dataset, using https://mockaroo.com/, made of one exce
 
 5.**Add data to your visual** > drag measure Count of 'name of the product'  into Fields > select 
 
-**creating 4 different card, each per every product
+6.Creating 4 different card, each per every product
 
-**Create new measure**, called 'product' Revenues (in this case 'Cappuccino'), and doing the same for all the 4 products
+7.**Create new measure**, called 'product' Revenues (in this case 'Cappuccino'), using `COUNTX` to filter only the desired prodcut. Then doing the same for all the 4 products
 
 `
 
@@ -48,7 +48,7 @@ First of all, I created a dataset, using https://mockaroo.com/, made of one exce
 
     RETURN prod1+prod2+prod3
 
-**Create new measure**, called Var % 'Product' Sales
+8.**Create new measure**, called Var % 'Product' Sales
 
 `
 
@@ -61,7 +61,3 @@ First of all, I created a dataset, using https://mockaroo.com/, made of one exce
     RETURN (Sales_current_Y-Sales_previous_Y)/Sales_previous_Y
 
 
-
-9. **Visualizations** > **Add data to your visual** > **Clustered bar chart**
-
-10. **Add data to your visual** > drag field "EducationField" in the Y-axis 
