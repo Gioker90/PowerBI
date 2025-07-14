@@ -2,13 +2,13 @@
 
 First of all, I created a dataset, using https://mockaroo.com/, made of one excel file containing Sales data. The file contains the sales data of 6 coffee shops in different areas of Rome, selling 4 different types of product. There is 299 different orders distributed along 3 years (2024-2025). Every order can have from 1 to 3 items, each represented in a different columns, with a price column aside
 
-**Goal: creating a single page dashboard that represent the overall sales trend of the shops along the last 3 years. The Dashboard shpuld represent the revenues generated per type of pèroduct, and there should be the possibility to filter the year and see the comparison, in terms of revenues, with the previous year**
+**Goal: creating a single page dashboard that represent the overall sales trend of the shops along the last 3 years. The Dashboard should represent the revenues generated per type of product, and there should be the possibility to filter the year and see the comparison, in terms of revenues, with the previous year**
 
 1.**Import data: Home** > **Get data** > **Text/CSV**
 
 2.**Transform Data** > **Remove Column** (unecessary columns) > **Reorder Column** (in order to have the primary key as first column) > **Remove Duplicates**
 
-3.**Create new measure**, called 'product' Revenues (in this case 'Cappuccino'), using `SUMX` c. Then doing the same for all the 4 products
+3.**Create new measure**, called 'product' Revenues (in this case 'Cappuccino'), using `SUMX`. Then doing the same for all the 4 products
 
 `
 
