@@ -1,4 +1,22 @@
-# Attrition rate overview
+# **Attrition Rate Analysis Dashboard (Power BI)**
+
+## **Overview**
+This project analyzes employee attrition trends using HR data to help organizations understand workforce dynamics and identify risk factors. The dashboard provides insights into attrition rates by salary groups, departments, and time periods.
+
+**Tools Used:**  
+- Power BI  
+- DAX  
+- Dataset: HR Analytics Dataset from Kaggle
+
+---
+
+## **Business Questions**
+- What is the overall attrition rate?
+- How does attrition vary across salary ranges and departments?
+
+---
+
+## Key Features
 1. Download xslsx file from kaggle.com (HR Analytics Datasets: https://www.kaggle.com/datasets/muhammadehabmuhammad/hr-analytics-datasets), containing 3 table: a fact table, named HR, and 2 dimension tables, named Employee and Department.
 
 2. Go to **Model view** > set the relationship between the table: HR and Employees have a one-to-one relationship, because there is a uniqe ID value in both. HR and Department have a mant-to-one relationship, with the value 'Department' that is present multiple times in the HR table and as a unique value in the Department Table
@@ -7,7 +25,7 @@
 
 `IF Termination Date = null THEN 'No', ELSE 'Yes'`
 
-## Clustered Column Chart
+### Clustered Column Chart
 
 4. Go to **Report view**: 
 
@@ -21,7 +39,7 @@
 
 9. **Add data to your visual** > drag  Measure 'HC' in the Y-axis
 
-## Stacked Area Chart
+### Stacked Area Chart
 
 10. **Visualizations** > **Add data to your visual** >**Stacked Area Chart**
 
@@ -29,7 +47,7 @@
 
 12. **Add data to your visual** > drag Measure 'HC' in the Y-axis
 
-## 100% Stacked Bar Chart
+### 100% Stacked Bar Chart
 
 13. **Visualizations** > **Add data to your visual** >**100% Stacked Bar Chart**
 
@@ -37,7 +55,7 @@
 
 15. **Add data to your visual** > drag Field 'Attrition' in 'Legend'
 
-## Attrition rate vs Overall av. Attrition rate panel
+### Attrition rate vs Overall av. Attrition rate panel
 
 16. **Insert** > **Text box** to create the title of the panel and the 4 groups titles
 
@@ -64,3 +82,7 @@
 `IF' Variation %' < 0 THEN` ![image](https://github.com/user-attachments/assets/42f4da43-7c6d-444a-aee4-101d6970ede3)
 
 22. Do the same for the other 3 groups of salary
+
+
+## **Insights**
+- Higher attrition observed in lower salary ranges (30–33k).
