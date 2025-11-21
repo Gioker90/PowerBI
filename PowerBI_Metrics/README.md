@@ -1,5 +1,5 @@
 # Overview
-This project focuses on building an interactive HR analytics dashboard in Power BI using employee attrition data sourced from Kaggle. The dashboard will provide insights into workforce composition, departmental distribution, education fields, and job roles. By leveraging Power BI’s visualization capabilities, the goal is to create a user-friendly tool for HR teams to monitor headcount and analyze workforce trends effectively.
+This project focuses on building an interactive HR analytics dashboard in Power BI using employee attrition data sourced from Kaggle. The dashboard will provide insights into workforce composition, departmental distribution, education fields, and job roles. By leveraging Power BI’s visualization capabilities, the goal is to create a user-friendly tool for HR teams to monitor headcount effectively.
 
 # PowerBI_HR_Metrics
 
