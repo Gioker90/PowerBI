@@ -1,6 +1,6 @@
 # PowerBI_Sales_Dashboard
 
-## 📌 Overview
+## Overview
 This project focuses on creating a **single-page Power BI dashboard** to analyze sales data from six coffee shops located in different areas of Rome. The dataset, generated using https://mockaroo.com/, contains **299 orders** distributed across **three years (2024–2025)**. Each order includes 1–3 items with associated prices.
 
 The dashboard aims to provide:
@@ -9,7 +9,7 @@ The dashboard aims to provide:
 - Year-over-year comparison of revenues with filtering capabilities.
 
 
-## ❓ Business Questions
+## Business Questions
 1. **Which product type contributes the most to overall revenue?**
 2. **How do revenues compare across different years?**
 3. **What is the best performing shop? What the worst?**
@@ -73,7 +73,7 @@ The dashboard aims to provide:
     RETURN (Sales_current_Y-Sales_previous_Y)/Sales_previous_Y
 
 
-## ✅ Final Insights
+## Final Insights
 - **Top-performing product:** Latte consistently drives the highest revenue across all shops, while Matcha being the worst selling product
 - **Year-over-year growth:** Overall sales increased by approximately **30%** from 2023 to 2024, while they are stable from 2024 to 2025
 - **Shop performance:** Shop located in Trevi Fountain generated the highest revenue in 2025, while Colosseum was the lowest
