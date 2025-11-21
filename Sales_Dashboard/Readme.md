@@ -8,6 +8,10 @@ The dashboard aims to provide:
 - **Revenue breakdown by product type** (Cappuccino, Espresso, etc.).
 - Year-over-year comparison of revenues with filtering capabilities.
 
+**Tools Used:**  
+- M for ETL
+- Power BI  
+- DAX  
 
 ## Business Questions
 1. **Which product type contributes the most to overall revenue?**
