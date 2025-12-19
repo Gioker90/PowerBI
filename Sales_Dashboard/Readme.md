@@ -9,8 +9,7 @@ The dashboard aims to provide:
 - Year-over-year comparison of revenues with filtering capabilities.
 
 **Tools Used:**  
-- M for ETL
-- Power BI  
+- Power BI: M for ETL, data modelling, DAX, variables
 - DAX  
 
 ## Business Questions
