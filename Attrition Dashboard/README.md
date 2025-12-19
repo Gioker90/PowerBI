@@ -4,8 +4,7 @@
 This project analyzes employee attrition trends using HR data to help organizations understand workforce dynamics and identify risk factors. The dashboard provides insights into attrition rates by salary groups, departments, and time periods.
 
 **Tools Used:**  
-- M for ETL
-- Power BI  
+- Power BI: M for ETL, DAX, calculated columns, data modelling, data visualizations,  
 - DAX  
 - Dataset: HR Analytics Dataset from Kaggle
 
