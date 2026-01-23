@@ -4,14 +4,14 @@
 The scope of the project is to create a comprehensive dashboard which can give a quick and complete overview on Company's headcount, with information about geographical and organizational distribution, gender, age and seniority. The dashboard should be user-friendly and showing data which update weekly; in this case there is no need for 'real-time' data
 
 **Tools Used:**  
-- Power BI Desktop: M for ETL, DAX, calculated columns, data modelling to manage tables' relationships, data visualizations, visual calculations
-- Power BI Service: scheduled refresh, publication 
+- Power BI Desktop: M for ETL, DAX, calculated columns, data visualizations, visual calculations
+- Power BI Service: scheduled refresh, publication and permissions management
 - Dataset: HR Analytics Dataset created with https://www.mockaroo.com/
 
 ---
 
 ## **Business Questions**
-- What's the company Department with the highest number of employees? And the country?
+- What's the Department with the highest number of employees? And the country?
 - Which is the most represented Gender in the most populated country?
 - Which is the oldest country? And the one with the highest tenure?
 
