@@ -25,10 +25,9 @@ The scope of the project is to create a comprehensive dashboard which can give a
 
 3. **Transform Data** > Looking for duplicate values in column ID, or null values 
 
-4. **Add Conditional Column** to create Age ranges based on the value 'Age', and doing the same to create Seniority ranges
+4. **Add Conditional Column**, to create Age ranges based on the value 'Age', and then doing the same to create Seniority ranges
 
-
-4. Go to **Report view**: 
+Go to **Report view**: 
 
 5. Create measure: **Calculations** > **New Measure** 'HC': `DISTINCCOUNT('HC'[ID])`
 
@@ -36,7 +35,7 @@ The scope of the project is to create a comprehensive dashboard which can give a
 
 7. **Visualizations** > **Add data to your visual** > **Table** > drag field 'HC' and 'Department' into 'Columns
 
-8. **Visualizations** > **Add data to your visual** > **Dount Chart** drag field 'HC' in Values and 'Gender' in 'Legend'
+8. **Visualizations** > **Add data to your visual** > **Donut Chart** drag field 'HC' in Values and 'Gender' in 'Legend'
 
 9. **Visualizations** > **Add data to your visual** > **Column Clustered Chart** drag field 'HC' in Y-axis and 'Age Range' in Y-axis > **New visual calculation** to create a visual calculation called 'index' that, leveraging 'SWITCH', will assign a number from 1 to 5 to the Age ranges: this way I will be able to represent the column in crescent range order (<30, 30-35 etc.). I will do the same to create a Seniority range chart
 
