@@ -1,4 +1,4 @@
-# **HR Dashboard (Power BI)**
+# **HR Headcount Dashboard (Power BI)**
 
 ## **Overview**
 The scope of the project is to create a comprhenesive dahboard which give quick and complete overviem on Company's headcount, with informationabout geographical and organiztional distribution, gender, age and seniority seniority. The dashboard should be user-friendly and showing data which update weekly, in this case there is no need for 'real-time' data
