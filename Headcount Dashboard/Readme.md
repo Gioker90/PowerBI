@@ -18,9 +18,9 @@ The scope of the project is to create a comprehensive dashboard which can give a
 ---
 
 ## Key Features
-1. I downloaded the dataset from https://www.mockaroo.com/ I save it in a SharePoint folder. This way I will be able to refresh the data from Power Bi Service. In this case, after importing the data with'import' funciont, I'll set a Weekly scheduled refresh to have updated data every week
+1. I downloaded the dataset from https://www.mockaroo.com/ and saved it in a SharePoint folder. This way I will be able to refresh the data from Power Bi Service. In this case, after importing the data with 'import' function, I'll set a weekly scheduled refresh to have updated data every week
 
-2. Get data > SharePoint folder > 'link to the folder' > filtering 'folder path' with the exact path to the file we need
+2. **Get data** > SharePoint folder > 'link to the folder' > filtering 'folder path' with the exact path to the file we need
 
 
 3. **Transform Data** > Looking for duplicate values in column ID, or null values 
