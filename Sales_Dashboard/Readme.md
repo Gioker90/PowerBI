@@ -1,4 +1,4 @@
-# PowerBI_Sales_Dashboard
+# PowerBI_Sales_Dashboard [Video](https://github.com/user-attachments/assets/0d79a92a-c73e-4ce8-888f-bd74e8d09017)
 
 ## Overview
 This project focuses on creating a **single-page Power BI dashboard** to analyze sales data from six coffee shops located in different areas of Rome. The dataset, generated using https://mockaroo.com/, contains **299 orders** distributed across **three years (2024–2025)**. Each order includes 1–3 items with associated prices.
